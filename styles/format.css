@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  height: 100%;
+}
+textarea {
+  height: calc(100% - 50px);
+}
+textarea, input {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  outline: none;
+  font-family: hind;
+  font-size: 16px;
+  float: left;
+}
+input {
+  font-family: courier;
+  height: 50px;
+  padding: 20px;
+  font-size: 10px;
+  background-color: #eeeeee;
+}
+button#examples {
+  position: absolute;
+  bottom: 9px;
+  right: 59px;
+  height: 32px;
+  font-size: 20px;
+  padding: 6px;
+  background-color: #222222;
+  color: #eeeeee;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

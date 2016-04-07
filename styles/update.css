@@ -1,0 +1,41 @@
+* {
+  font-size: 16px;
+  color: #444444;
+}
+blockquote#preview {
+  clear: both;
+}
+textarea#newBody {
+  font-family: courier;
+}
+textarea#newBody, textarea#body {
+  width: 50%;
+  float: left;
+  height: 250px;
+}
+button, input, select, textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  transition: .2s all;
+  border-radius: 2px;
+}
+button:focus, input:focus, select:focus, textarea:focus {
+  background-color: #e4f1fe;
+  outline: none;
+}
+button:hover, input:hover, select:hover, textarea:hover {
+  background-color: #ececec;
+}
+input[name=username], input[name=password] {
+  width: 50%;
+  float: left;
+}
+input#title, input#image, input#postId, select[name=type] {
+  width: 25%;
+  float: left;
+}
+button {
+  width: 100%;
+  text-align: center;
+}
