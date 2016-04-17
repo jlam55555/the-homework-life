@@ -11,7 +11,8 @@
 		$itemString .= "<link>http://www.thehomeworklife.co.nf/index.html?post=" . $post["id"] . "</link>";
 		$content = preg_replace("/<.+?>/", " ", $post["content"]);
 		$content = preg_replace("/&\w+/", " ", $content);
-		$itemString .= "<description>" . substr($content, 0, 250) . "...</description>";
+		$contentString = count($content) <= 250 ? $content : substr($content, 0, 250) . "...";
+		$itemString .= "<description>$contentString</description>";
 		$date = $post["at"];
 		$date = str_replace("AM", "am", $date);
 		$date = str_replace("PM", "pm", $date);
