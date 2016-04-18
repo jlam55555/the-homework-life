@@ -96,6 +96,7 @@ $(function() {
       method: "post",
       success: function(response) {
         alert("Success: " + response);
+		$.get("scripts/generateRss.php");
       },
       error: function(test, test2, error) {
         alert("ERROR: " + test + " " + test2 + " " + error);

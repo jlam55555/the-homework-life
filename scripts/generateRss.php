@@ -9,9 +9,9 @@
 		$itemString .= "<item>";
 		$itemString .= "<title>" . $post["title"] . "</title>";
 		$itemString .= "<link>http://www.thehomeworklife.co.nf/index.html?post=" . $post["id"] . "</link>";
-		$content = preg_replace("/<.+?>/", " ", $post["content"]);
+		$content = preg_replace("/<.+?>/", "", $post["content"]);
 		$content = preg_replace("/&\w+/", " ", $content);
-		$contentString = count($content) <= 250 ? $content : substr($content, 0, 250) . "...";
+		$contentString = strlen($content) <= 250 ? $content : substr($content, 0, 250) . "...";
 		$itemString .= "<description>$contentString</description>";
 		$date = $post["at"];
 		$date = str_replace("AM", "am", $date);
